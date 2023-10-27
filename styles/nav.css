@@ -1,3 +1,9 @@
+/* 
+Deixar hover mais escuro, 
+Reduzir a quantidade de texto na navbar
+Aumentar o tamanho do padding lateral nos links na nav
+*/
+
 /* Edita a navbar */
 .nav{
     position: absolute;
@@ -66,7 +72,6 @@ button{
         height: 265px;
         width: 180px;
         margin-top: 64px;
-/*         margin-right: 32px; */
         row-gap: 32px;
         transition: all 0.4s linear;
         border: solid black 1px;
