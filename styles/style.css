@@ -5,5 +5,37 @@
     font-family: 'Poppins';
 }
 body{
+    margin-top: 80px;
     background: ghostwhite;
+}
+.mainQuemSomos{
+    padding: 25px;
+    text-align: center;   
+}
+.mainQuemSomos hr{
+    margin:5px auto 25px;
+    width:200px; 
+    height: 4px;
+    color:#9DD9F3;
+    opacity: 1;
+}
+.mainQuemSomos p{
+    margin-bottom:12px;
+    text-align: justify;
+}
+.mainQuemSomos h1{
+    font-size: 26px;
+}
+.mainQuemSomos span{
+    font-weight: bold;
+}
+.btnVoltar{
+    color: #77C3EC;
+    border-color: #77C3EC;
+    border-width: 2px;
+    margin-top: 25px;
+}
+.btnVoltar:hover{
+    background-color: #9DD9F3;
+    border-color: #9DD9F3;
 }
