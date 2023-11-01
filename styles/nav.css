@@ -78,7 +78,7 @@ button{
         right: 0;
         background-color: #ffcc05;
         flex-direction: column;
-        height: 265px;
+        height: 235px;
         width: 180px;
         margin-top: 64px;
         row-gap: 32px;
@@ -95,11 +95,6 @@ button{
         line-height: 33px;
         border-bottom: dotted white 1px;
         padding: 0;
-    }
-    .nav a:hover{
-        background-color: #ffe064;
-        border: solid black 1px;
-        border-radius: 0px;
     }
     /* Mostra o menu ao clicar no botão */
     .nav .navAberta{
