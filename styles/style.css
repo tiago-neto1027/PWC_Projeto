@@ -16,7 +16,8 @@ body{
 .mainQuemSomos hr{
     margin:5px auto 25px;
     width:200px;
-    height: 4px;
+    border:#9DD9F3 3px solid;
+    border-radius: 10px;
     color:#9DD9F3;
     opacity: 1;
 }
@@ -46,6 +47,7 @@ body{
     background-color: ghostwhite!important;
     color: #77C3EC!important;
     border-color: #77C3EC!important;
+}
 /* Imagem de Fundo Inicial */
 .firstImage{
     background-image: url("../imgs/dog.jpeg");
@@ -112,7 +114,7 @@ body{
     }
     /* Botão sobre a imagem inicial */
     .firstImageButton{
-        top: 21%;
+        top: 18%;
         height: 50px;
     }
 }
