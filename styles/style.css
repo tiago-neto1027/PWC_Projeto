@@ -49,37 +49,40 @@ body{
 }
 /* Imagem de Fundo Inicial */
 .firstImage{
+    /* Centra o conteudo na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Define o background */
     background-image: url("../imgs/dog.jpeg");
     background-repeat: no-repeat;
     height: calc(100vh - 55.96px);
     background-position: 85%;
     background-size: cover;
     opacity: 0.85;
-    filter: blur(2px)
 }
 /* Titulo sobre a imagem inicial */
-.firstImageTitle{ 
+.firstImageTitle{
+    /* Background */
     background-color: rgba(155,216,243, 0.4);
+    border: 3px solid ghostwhite;
+    /* Texto */
     color: ghostwhite;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-shadow: 2px 1px 2px black;
+    /* Posição */
     width: 80%;
     padding: 20px;
-    text-align: center;
-    text-shadow: 2px 1px 2px black;
+    margin: auto;
+    min-width: 200px;
 }
 /* Botão sobre a imagem inicial (Usa a formatação do btnVoltar) */
 .firstImageButton{
-    position: absolute;
-    top: 60%;
-    left: 33%;
     height: 60px;
     border-width: 4px;
     min-width: 125px;
+    max-width: 300px;
+    margin-top: 25px;
 }
 /* Design reativo */
 @media screen and (max-width: 768px){
@@ -91,12 +94,7 @@ body{
     }
     /* Titulo sobre a imagem inicial */
     .firstImageTitle{
-        top: 25%;
         padding: 5px;
-    }
-    /* Botão sobre a imagem inicial */
-    .firstImageButton{
-        top:32%;
     }
 }
 @media screen and (max-width: 450px){
@@ -107,13 +105,11 @@ body{
     }
     /* Titulo sobre a imagem inicial */
     .firstImageTitle{
-        top: 15%;
         font-size: 18px;
-        padding: 5px;
     }
     /* Botão sobre a imagem inicial */
     .firstImageButton{
-        top: 18%;
         height: 50px;
+        margin-top: 5px;
     }
 }
