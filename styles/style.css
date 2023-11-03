@@ -6,7 +6,6 @@
 }
 body{
     background: #f8f8ff;
-    margin-top: 65px;/* mudar valor de acordo com a navbar */
 }
 /* Página "Quem Somos" */
 .mainQuemSomos{
@@ -52,7 +51,7 @@ body{
 .firstImage{
     background-image: url("../imgs/dog.jpeg");
     background-repeat: no-repeat;
-    height: calc(100vh - 60px);/* mudar valor de acordo com a navbar */
+    height: calc(100vh - 55.96px);
     background-position: 85%;
     background-size: cover;
     opacity: 0.85;
@@ -92,12 +91,12 @@ body{
     }
     /* Titulo sobre a imagem inicial */
     .firstImageTitle{
-        top: 20%;
+        top: 25%;
         padding: 5px;
     }
     /* Botão sobre a imagem inicial */
     .firstImageButton{
-        top:30%;
+        top:32%;
     }
 }
 @media screen and (max-width: 450px){
