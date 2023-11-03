@@ -6,7 +6,6 @@
 }
 body{
     background: #f8f8ff;
-    margin-top: 65px;/* mudar valor de acordo com a navbar */
 }
 /* Página "Quem Somos" */
 .mainQuemSomos{
@@ -16,7 +15,8 @@ body{
 .mainQuemSomos hr{
     margin:5px auto 25px;
     width:200px;
-    height: 4px;
+    border:#9DD9F3 3px solid;
+    border-radius: 10px;
     color:#9DD9F3;
     opacity: 1;
 }
@@ -46,11 +46,12 @@ body{
     background-color: ghostwhite!important;
     color: #77C3EC!important;
     border-color: #77C3EC!important;
+}
 /* Imagem de Fundo Inicial */
 .firstImage{
     background-image: url("../imgs/dog.jpeg");
     background-repeat: no-repeat;
-    height: calc(100vh - 60px);/* mudar valor de acordo com a navbar */
+    height: calc(100vh - 55.96px);
     background-position: 85%;
     background-size: cover;
     opacity: 0.85;
@@ -90,12 +91,12 @@ body{
     }
     /* Titulo sobre a imagem inicial */
     .firstImageTitle{
-        top: 20%;
+        top: 25%;
         padding: 5px;
     }
     /* Botão sobre a imagem inicial */
     .firstImageButton{
-        top:30%;
+        top:32%;
     }
 }
 @media screen and (max-width: 450px){
@@ -112,7 +113,7 @@ body{
     }
     /* Botão sobre a imagem inicial */
     .firstImageButton{
-        top: 21%;
+        top: 18%;
         height: 50px;
     }
 }
