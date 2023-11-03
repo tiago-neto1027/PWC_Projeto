@@ -5,5 +5,76 @@
     font-family: 'Poppins';
 }
 body{
-    background: ghostwhite;
+    background: #f8f8ff;
+    margin-top: 65px;/* mudar valor de acordo com a navbar */
+}
+/* Imagem de Fundo Inicial */
+.firstImage{
+    background-image: url("../imgs/dog.jpeg");
+    background-repeat: no-repeat;
+    height: calc(100vh - 60px);/* mudar valor de acordo com a navbar */
+    background-position: 85%;
+    background-size: cover;
+    opacity: 0.85;
+    filter: blur(2px)
+}
+/* Titulo sobre a imagem inicial */
+.firstImageTitle{ 
+    background-color: rgba(155,216,243, 0.4);
+    color: ghostwhite;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+}
+/* Botão sobre a imagem inicial */
+.firstImageButton{
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    height: 60px;
+    border-width: 4px;
+    min-width: 125px;
+}
+/* Design reativo */
+@media screen and (max-width: 768px){
+    /* Imagem de Fundo Inicial */
+    .firstImage{
+        height: 40vh;
+        background-size: cover;
+        background-position: 85% 70%;
+    }
+    /* Titulo sobre a imagem inicial */
+    .firstImageTitle{
+        top: 20%;
+        padding: 5px;
+    }
+    /* Botão sobre a imagem inicial */
+    .firstImageButton{
+        top:30%;
+    }
+}
+@media screen and (max-width: 450px){
+    /* Imagem de Fundo Inicial */
+    .firstImage{
+        height: 22vh;
+        background-position: 85% 65%;
+    }
+    /* Titulo sobre a imagem inicial */
+    .firstImageTitle{
+        top: 15%;
+        font-size: 18px;
+        padding: 5px;
+    }
+    /* Botão sobre a imagem inicial */
+    .firstImageButton{
+        top: 21%;
+        height: 50px;
+    }
 }

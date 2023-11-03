@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     padding: 15px 30px;
-    background: #ffcc05;
+    background: #9DD9F3;
     justify-content: space-between;
     font-size:18px;
     border-bottom: solid black 1px;
@@ -72,7 +72,7 @@ button{
         position: fixed;
         top: 0;
         right: 0;
-        background-color: #ffcc05;
+        background-color: #9DD9F3;
         flex-direction: column;
         height: 235px;
         width: 180px;
@@ -98,7 +98,6 @@ button{
     }
     /* Edita o botão de abrir */
     .nav .abrirNav{
-        color: white;
         font-size: 30px;
     }
 }
