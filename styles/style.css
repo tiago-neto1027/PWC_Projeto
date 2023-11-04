@@ -148,7 +148,7 @@ body{
     margin-top: 15px;
 }
 
-
+/*Formatação para as perguntas com dois campos de respostas*/
 div.form-duasperguntas{
     margin-bottom: 30px;
 }
@@ -178,6 +178,7 @@ input.form-duasperguntas{
     margin-top: 95px;
 }
 
+/*Campos de carater obrigatorio*/
 .campoObrigatorio{
     color: red;
     font-weight: bold;
@@ -204,3 +205,33 @@ input.form-duasperguntas{
     color: #77C3EC!important;
     border-color: #77C3EC!important;
 }
+
+/*Formatação das imagens no banner lateral*/
+.formBanner {
+    margin: 15% 1% auto auto;
+}
+
+.imagem1{
+    min-width: 100%;
+    height: 28%!important;
+}
+.img-thumbnail{
+    width: 50%;
+    height: 22%;
+}
+
+/*Adpação das imagens a tamanhos mais pequenos*/
+@media screen and (max-width: 1200px){
+    .img-thumbnail{
+        width: 100%;
+        height: 18%!important;
+    }
+}
+/*Banner lateral do formulário desaparece*/
+@media screen and (max-width: 576px){
+    .formBanner{
+        display: none;
+    }
+}
+
+
