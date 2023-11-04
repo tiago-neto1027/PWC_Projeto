@@ -10,7 +10,7 @@ body{
 /* Página "Quem Somos" */
 .mainQuemSomos{
     padding: 25px;
-    text-align: center;   
+    text-align: center;
 }
 .mainQuemSomos hr{
     margin:5px auto 25px;
@@ -113,3 +113,121 @@ body{
         margin-top: 5px;
     }
 }
+/*CSS Página formulário */
+/*Margens para todo o formulário*/
+.formClass{
+    margin-top: 7%;
+    margin-left: 2%;
+}
+
+/*Header do formulário*/
+.form-header {
+    margin-bottom: 7%;
+    font-weight: bold;
+    min-width: 100%;
+}
+
+/* formatação geral para os divs da página */
+.perguntaForm{
+    margin: 25px auto 35px auto;
+}
+
+/*Formatação geral para as sub perguntas*/
+.subPerguntas{
+    margin: 25px auto 10px 15px;
+}
+
+/*Caixas de input*/
+.form-control {
+    border: solid black 1px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+/*Formatação para as perguntas com dois campos de respostas*/
+div.form-duasperguntas{
+    margin-bottom: 30px;
+}
+input.form-duasperguntas{
+    margin-top: 5px;
+}
+
+/*Inputs tipo radio e checkbox*/
+.form-check input[type=radio], .form-check input[type=checkbox]{
+    border: solid black 1px;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.form-check, .form-subpergunta{
+    max-width: 100%;
+    margin: 10px 5px 0 15px;
+}
+
+.form-check-label{
+    padding-top: 10px;
+    display: table-cell;
+}
+
+.separadorForm{
+    margin-top: 95px;
+}
+
+/*Campos de carater obrigatorio*/
+.campoObrigatorio{
+    color: red;
+    font-weight: bold;
+}
+
+/* cor para links */
+.ligacao{
+    color: #77C3EC;
+}
+/* Butão enviar, usa formatação semelhante ao btnVoltar da home page*/
+.btnEnviar{
+    background-color: ghostwhite;
+    color: #77C3EC;
+    border-color: #77C3EC;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+.btnEnviar:hover{
+    background-color: #77C3EC;
+    border-color: #77C3EC;
+}
+.btnEnviar:active{
+    background-color: ghostwhite!important;
+    color: #77C3EC!important;
+    border-color: #77C3EC!important;
+}
+
+/*Formatação das imagens no banner lateral*/
+.formBanner {
+    margin: 15% 1% auto auto;
+}
+
+.imagem1{
+    min-width: 100%;
+    height: 28%!important;
+}
+.img-thumbnail{
+    width: 50%;
+    height: 22%;
+}
+
+/*Adpação das imagens a tamanhos mais pequenos*/
+@media screen and (max-width: 1200px){
+    .img-thumbnail{
+        width: 100%;
+        height: 18%!important;
+    }
+}
+/*Banner lateral do formulário desaparece*/
+@media screen and (max-width: 576px){
+    .formBanner{
+        display: none;
+    }
+}
+
+

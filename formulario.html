@@ -49,6 +49,705 @@
     </header>
     <!-- Conteúdo da Página -->
 
+    <div class="container-fluid">
+        <div class="row text-left col-12 ">
+            <!-- Inicio do formulário -->
+            <form action="#" method="POST" id="formAdocao" class="row g-4 col-md-6  formClass">
+                <h1 class="fs-1 col-md-7 col-12 form-header">Formulário Para Adoção</h1>
+                <div class="perguntaForm">
+                    <label for="idnomecompleto" class="form-label fs-5">Nome completo</label>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="text" class="form-control" id="idnomecompleto" required>
+                </div>
+                <div class="perguntaForm">
+                    <label for="idcontactotel" class="form-label fs-5">Contacto telefónico</label>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="number" class="form-control" id="idcontactotel" required>
+                </div>
+                <div class="perguntaForm">
+                    <label for="idemail" class="form-label fs-5">E-mail</label>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="text" class="form-control" id="idemail" required>
+                </div>
+                <div class="perguntaForm">
+                    <label for="ididade" class="form-label fs-5">Idade</label>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="number" class="form-control" id="ididade" required>
+                </div>
+                <div class="perguntaForm">
+                    <label for="idmorada" class="form-label fs-5">Morada</label>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <textarea class="form-control" id="idmorada" required></textarea>
+                </div>
+                <div class="perguntaForm">
+                    <label for="idcidade" class="form-label fs-5">Cidade</label>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="text" class="form-control" id="idcidade" required>
+                </div>
+                <div class="perguntaForm">
+                    <label for="idprofissao" class="form-label fs-5">Profissão</label>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="text" class="form-control" id="idprofissao" required>
+                </div>
+                <div class="perguntaForm">
+                    <label for="idanimal" class="form-label fs-5">Se pretender adotar um animal específico,
+                        porfavor indique o nome do animal.</label>
+                    <input type="text" class="form-control" id="idanimal">
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Caso não procure adoptar um animal específico,
+                            indique se tem preferência pelo sexo do animal.</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="generoAnimal" id="idgenero1"
+                               value="macho" required>
+                        <label class="form-check-label" for="idgenero1">
+                            Macho
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="generoAnimal" id="idgenero2"
+                               value="femea">
+                        <label class="form-check-label" for="idgenero2">
+                            Fêmea
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="generoAnimal" id="idgenero3"
+                               value="indiferente">
+                        <label class="form-check-label" for="idgenero3">
+                            Indiferente
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Qual o objetivo da adopção?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="motivoAdo" id="idmotado1"
+                               value="companhiagato" required>
+                        <label class="form-check-label" for="idmotado1">
+                            Companhia para outro gato
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="motivoAdo" id="idmotado2"
+                               value="companhia">
+                        <label class="form-check-label" for="idmotado2">
+                            Companhia
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="motivoAdo" id="idmotado3"
+                               value="criacao">
+                        <label class="form-check-label" for="idmotado3">
+                            Criação
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Tipo de habitação</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipohabitacao" id="idhab1"
+                               value="apartamento" required>
+                        <label class="form-check-label" for="idhab1">
+                            Apartamento
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipohabitacao" id="idhab2"
+                               value="casaquintal">
+                        <label class="form-check-label" for="idhab2">
+                            Casa com quintal/acesso ao exterior
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Se tem jardim, este está completamente vedado?</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipojardim" id="idjardim1"
+                               value="sim">
+                        <label class="form-check-label" for="idjardim1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipojardim" id="idjardim2"
+                               value="nao">
+                        <label class="form-check-label" for="idjardim2">
+                            Não
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">A habitação é</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estadohabitacao" id="idtipohab1"
+                               value="propria" required>
+                        <label class="form-check-label" for="idtipohab1">
+                            Própria
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estadohabitacao" id="idtipohab2"
+                               value="arrendada">
+                        <label class="form-check-label" for="idtipohab2">
+                            Arrendada
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span for="idnadultos" class="form-label fs-5">Quantos adultos vivem na casa?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="number" class="form-control" id="idnadultos" required>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Vivem crianças na casa? Se sim,
+                            indique o intervalo de idades</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="idadeCrian" id="ididadecriancas1"
+                               value="idadeCrian0" required>
+                        <label class="form-check-label" for="ididadecriancas1">
+                            Não existem crianças
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="idadeCrian" id="ididadecriancas2"
+                               value="idadeCrian5">
+                        <label class="form-check-label" for="ididadecriancas2">
+                            < 5 anos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="idadeCrian" id="ididadecriancas3"
+                               value="idadeCrian5a10">
+                        <label class="form-check-label" for="ididadecriancas3">
+                            5 a 10 anos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="idadeCrian" id="ididadecriancas4"
+                               value="idadeCrian10">
+                        <label class="form-check-label" for="ididadecriancas4">
+                            > 10 anos
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">A casa é visitada frequentemente por crianças?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="visitacrian" id="idvisitacrian1"
+                               value="sim" required>
+                        <label class="form-check-label" for="idvisitacrian1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="visitacrian" id="idvisitacrian2"
+                               value="nao">
+                        <label class="form-check-label" for="idvisitacrian2">
+                            Não
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span for="idhorassoz" class="form-label fs-5">Quantas horas por dia, em média,
+                            passará o animal, sozinho em casa?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <input type="number" class="form-control" id="idhorassoz" required>
+                </div>
+                <div>
+                    <span for="idnumanimais" class="form-label fs-5">Tem outros animais em casa e/ou a seu cargo?
+                            Se sim, especifique por favor o tipo e a idade.</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <textarea class="form-control" id="idnumanimais" required></textarea>
+                </div>
+                <div class="perguntaForm separadorForm">
+                    <label class="form-label fs-5">Que tipo de personalidade espera encontrar no animal?
+                        Preencha por favor as próximas questões:</label>
+                    <div class="subPerguntas">
+                        <span>Goste de crianças: </span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gostadecriancas" id="idgostacrian1"
+                                   value="muitoimportante" required>
+                            <label class="form-check-label" for="idgostacrian1">
+                                Muito Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gostadecriancas" id="idgostacrian2"
+                                   value="importante">
+                            <label class="form-check-label" for="idgostacrian2">
+                                Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gostadecriancas" id="idgostacrian3"
+                                   value="poucoimportante">
+                            <label class="form-check-label" for="idgostacrian3">
+                                Pouco importante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Sociável com outros animais:</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gostadecriancas" id="idsocani1"
+                                   value="muitoimportante" required>
+                            <label class="form-check-label" for="idsocani1">
+                                Muito Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gostadecriancas" id="idsocani2"
+                                   value="importante">
+                            <label class="form-check-label" for="idsocani2">
+                                Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gostadecriancas" id="idsocani3"
+                                   value="poucoimportante">
+                            <label class="form-check-label" for="idsocani3">
+                                Pouco importante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Não se importe com estranhos:</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="importaestranhos" id="idimpestr1"
+                                   value="muitoimportante" required>
+                            <label class="form-check-label" for="idimpestr1">
+                                Muito Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="importaestranhos" id="idimpestr2"
+                                   value="importante">
+                            <label class="form-check-label" for="idimpestr2">
+                                Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="importaestranhos" id="idimpestr3"
+                                   value="poucoimportante">
+                            <label class="form-check-label" for="idimpestr3">
+                                Pouco importante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Esteja esterilizado/castrado:</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estrelizado" id="idestrelizado1"
+                                   value="muitoimportante" required>
+                            <label class="form-check-label" for="idestrelizado1">
+                                Muito Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estrelizado" id="idestrelizado2"
+                                   value="importante">
+                            <label class="form-check-label" for="idestrelizado2">
+                                Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="estrelizado" id="idestrelizado3"
+                                   value="poucoimportante">
+                            <label class="form-check-label" for="idestrelizado3">
+                                Pouco importante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Goste de ser pegado ao colo:</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pegadoaocolo" id="idpegcolo1"
+                                   value="muitoimportante" required>
+                            <label class="form-check-label" for="idpegcolo1">
+                                Muito Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pegadoaocolo" id="idpegcolo2"
+                                   value="importante">
+                            <label class="form-check-label" for="idpegcolo2">
+                                Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pegadoaocolo" id="idpegcolo3"
+                                   value="poucoimportante">
+                            <label class="form-check-label" for="idpegcolo3">
+                                Pouco importante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Que seja calmo:</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="calmo" id="idcalmo1"
+                                   value="muitoimportante" required>
+                            <label class="form-check-label" for="idcalmo1">
+                                Muito Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="calmo" id="idcalmo2"
+                                   value="importante">
+                            <label class="form-check-label" for="idcalmo2">
+                                Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="calmo" id="idcalmo3"
+                                   value="poucoimportante">
+                            <label class="form-check-label" for="idcalmo3">
+                                Pouco importante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Que se comporte bem quando fica sozinho:</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="comportsoz" id="idcomportsoz1"
+                                   value="muitoimportante" required>
+                            <label class="form-check-label" for="idcomportsoz1">
+                                Muito Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="comportsoz" id="idcomportsoz2"
+                                   value="importante">
+                            <label class="form-check-label" for="idcomportsoz2">
+                                Importante
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="comportsoz" id="idcomportsoz3"
+                                   value="poucoimportante">
+                            <label class="form-check-label" for="idcomportsoz3">
+                                Pouco importante
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Atividade do animal:</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ativanimal" id="idativani1"
+                                   value="calmo" required>
+                            <label class="form-check-label" for="idativani1">
+                                Calmo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ativanimal" id="idativani2"
+                                   value="moderadoactivo" required>
+                            <label class="form-check-label" for="idativani2">
+                                Moderadamente activo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ativanimal" id="idativani3"
+                                   value="activo">
+                            <label class="form-check-label" for="idativani3">
+                                Activo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="ativanimal" id="idativanimal4"
+                                   value="indiferente">
+                            <label class="form-check-label" for="idativanimal4">
+                                Indiferente
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <span>Será o seu primeiro animal?</span>
+                        <span class="campoObrigatorio fs-5">*</span>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="primeiroani" id="idprimeiroani1"
+                                   value="sim" required>
+                            <label class="form-check-label" for="idprimeiroani1">
+                                Sim
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="primeiroani" id="idprimeiroani2"
+                                   value="nao">
+                            <label class="form-check-label" for="idprimeiroani2">
+                                Não
+                            </label>
+                        </div>
+                    </div>
+                    <div class="subPerguntas">
+                        <label for="idexpanimal" class="form-check-label form-subpergunta">Se não, conte-nos a sua experiência
+                            por favor.</label>
+                        <textarea class="form-control" id="idexpanimal"></textarea>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Na sua ausência (férias p.ex.) como pretende deixar o
+                        animal?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="estadoaniausencia"
+                               id="idestadoaniausencia1" value="familiar" required>
+                        <label class="form-check-label" for="idestadoaniausencia1">
+                            Ficará aos cuidados de um familiar/conhecido;
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="estadoaniausencia"
+                               id="idestadoaniausencia2" value="hotel">
+                        <label class="form-check-label" for="idestadoaniausencia2">
+                            Ficará em hotel;
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="estadoaniausencia"
+                               id="idestadoaniausencia3" value="ferias">
+                        <label class="form-check-label" for="idestadoaniausencia3">
+                            Irá comigo de férias.
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">O animal ficará preso em alguma situação?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="anipreso" id="idanipreso1"
+                               value="sim" required>
+                        <label class="form-check-label" for="idanipreso1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="anipreso" id="idanipreso2"
+                               value="nao">
+                        <label class="form-check-label" for="idanipreso2">
+                            Não
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <label class="form-label fs-5">Tem algum veterinário preferido? Se sim, deixe o seu nome e contacto.
+                    </label>
+                    <div class="col-10 form-duasperguntas">
+                        <label for="idnomevet" class="form-label">Nome do veterinário</label>
+                        <input type="text" class="form-control form-duasperguntas" id="idnomevet">
+                    </div>
+                    <div class="col-10">
+                        <label for="idcontactovet" class="form-label">Contacto do veterinário</label>
+                        <input type="number" class="form-control form-duasperguntas" id="idcontactovet">
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">No caso de acidente, irá recorrer a um veterinário?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="casoacidente" id="idcasoacidente1"
+                               value="sim" required>
+                        <label class="form-check-label" for="idcasoacidente1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="casoacidente" id="idcasoacidente2"
+                               value="nao">
+                        <label class="form-check-label" for="idcasoacidente2">
+                            Não
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span for="idcontaelevada" class="form-label fs-5">Se a conta for elevada, o que fará?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <textarea class="form-control" id="idcontaelevada" required></textarea>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Que tipo de alimentação pretende dar ao animal?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="alimentacao"
+                               id="idalimentacao1" value="familiar" required>
+                        <label class="form-check-label" for="idalimentacao1">
+                            Ração Seca
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="alimentacao"
+                               id="idalimentacao2" value="humida">
+                        <label class="form-check-label" for="idalimentacao2">
+                            Ração húmida
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="alimentacao"
+                               id="idalimentacao3" value="caseira">
+                        <label class="form-check-label" for="idalimentacao3">
+                            Comida caseira
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="alimentacao"
+                               id="idalimentacao4" value="restos">
+                        <label class="form-check-label" for="idalimentacao4">
+                            Restos de refeições
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">O que está nos seus planos para os próximos 10/15 anos?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="planosfuturos"
+                               id="idplanosfuturos1" value="planosft-filhos" required>
+                        <label class="form-check-label" for="idplanosfuturos1">
+                            Ter filhos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="planosfuturos"
+                               id="idplanosfuturos2" value="planosft-viajar">
+                        <label class="form-check-label" for="idplanosfuturos2">
+                            Viajar
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="planosfuturos"
+                               id="idplanosfuturos3" value="planosft-casar">
+                        <label class="form-check-label" for="idplanosfuturos3">
+                            Casar
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="planosfuturos"
+                               id="idplanosfuturos4" value="planosft-mudarpais">
+                        <label class="form-check-label" for="idplanosfuturos4">
+                            Mudar de país/cidade/etc
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="planosfuturos"
+                               id="idplanosfuturos5" value="planosft-mudarcasa">
+                        <label class="form-check-label" for="idplanosfuturos5">
+                            Mudar de casa
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Algum dos elementos do seu agregado familiar, ou amigos/parentes
+                        próximos, tem alergia a cães?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="alergiaani"
+                               id="idalergiaani1" value="sim" required>
+                        <label class="form-check-label" for="idalergiaani1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="alergiaani"
+                               id="idalergiaani2" value="nao">
+                        <label class="form-check-label" for="idalergiaani2">
+                            Não
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Em caso de gravidez, fará o teste da toxoplasmose? </span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="testetoxoplasmose"
+                               id="idtestetoxoplasmose1" value="sim" required>
+                        <label class="form-check-label" for="idtestetoxoplasmose1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="testetoxoplasmose"
+                               id="idtestetoxoplasmose2" value="nao">
+                        <label class="form-check-label" for="idtestetoxoplasmose2">
+                            Não
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span for="idtestepos" class="form-label fs-5">Se for positivo, o que fará?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <textarea class="form-control" id="idtestepos" required></textarea>
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Gostaria de continuar a ter o nosso apoio/conselhos,
+                        depois de adoptar o animal?</span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apoioposadoc"
+                               id="idapoioposadoc1" value="sim" required>
+                        <label class="form-check-label" for="idapoioposadoc1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apoioposadoc"
+                               id="idapoioposadoc2" value="nao">
+                        <label class="form-check-label" for="idapoioposadoc2">
+                            Não
+                        </label>
+                    </div>
+                </div>
+                <div class="perguntaForm">
+                    <span for="idinfoadicional" class="form-label fs-5">Outra informação que queira partilhar
+                        connosco</span>
+                    <textarea class="form-control" id="idinfoadicional" ></textarea>
+                </div>
+                <div class="perguntaForm">
+                    <span for="idficheiroadicionais" class="form-label fs-5">Anexar documentos:</span>
+                    <input type="file" class="form-control" id="idficheiroadicionais">
+                </div>
+                <div class="perguntaForm">
+                    <span class="form-label fs-5">Vamos manter os seus dados em segurança, enquanto assim o
+                        pretender, pode eliminar ou editar. Consulte a nossa <a class="ligacao">Política de Privacidade.</a></span>
+                    <span class="campoObrigatorio fs-5">*</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="apoioposadoc"
+                               id="polprivacidade" value="lido" required>
+                        <label class="form-check-label" for="polprivacidade">
+                            Li e concordo com a Política de Privacidade.
+                        </label>
+                    </div>
+                </div>
+                <div class="row col-6 col-lg-3">
+                    <button class="btn btn-outline-primary btnEnviar" type="submit">Enviar</button>
+                </div>
+            </form>
+            <!--Banner lateral com imagens-->
+            <div class="col-md-4 row ms-md-auto red formClass formBanner ">
+                <div>
+                    <img src="imgs/form-imgs/fi-simba-1.jpeg" class="img-thumbnail float-end imagem1" alt=" ">
+                    <img src="imgs/form-imgs/fi-simba-2.jpeg" class="img-thumbnail float-end" alt=" ">
+                    <img src="imgs/form-imgs/fi-simba-3.jpeg" class="img-thumbnail float-end" alt=" ">
+                    <img src="imgs/form-imgs/fi-simba-4.jpeg" class="img-thumbnail float-end" alt=" ">
+                    <img src="imgs/form-imgs/fi-saddog.jpeg" class="img-thumbnail float-end" alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
