@@ -84,7 +84,49 @@ body{
     max-width: 300px;
     margin-top: 25px;
 }
+/* Colunas da HomePage */
+.homeColumns{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    column-gap: 30px;
+}
+.homeColumns h1{
+    font-size: 32px;
+    padding-top: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+.homeColumns i{
+    font-size: 32px;
+}
+.homeColumns p{
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+}
+.homeColumns .btn-dark{
+    margin-bottom: 20px;
+}
+.coluna1{
+    background: #eaeaea;
+}
+.coluna2{
+    background: #9DD9F3;
+}
+.coluna3{
+    background: #77C3EC;
+}
 /* Design reativo */
+@media screen and (max-width: 992px){
+    .homeColumns{
+        display: inherit;
+    }
+    .coluna1, .coluna2{
+        margin-bottom: 10px;
+    }
+}
 @media screen and (max-width: 768px){
     /* Imagem de Fundo Inicial */
     .firstImage{
