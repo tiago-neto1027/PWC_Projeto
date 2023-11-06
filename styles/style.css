@@ -15,9 +15,9 @@ body{
 .mainQuemSomos hr{
     margin:5px auto 25px;
     width:200px;
-    border:#9DD9F3 3px solid;
+    border:#77C3EC 3px solid;
     border-radius: 10px;
-    color:#9DD9F3;
+    color:#77C3EC;
     opacity: 1;
 }
 .mainQuemSomos p{
@@ -268,6 +268,53 @@ h1.lojaHeader{
     height: 300px;
     background: lightgrey;
 }
-
-
+/* página contactos */
+.mainContactos{
+    box-sizing: border-box;
+}
+.mainContactos h1{
+    font-size: 26px;
+    text-align: center;
+}
+.mainContactos hr{
+    margin:5px auto 25px;
+    width:200px;
+    border:#77C3EC 3px solid;
+    border-radius: 10px;
+    color:#77C3EC;
+    opacity: 1;
+}
+.mainContactos h2{
+    font-size: 22px;
+}
+.mainContactos p{
+    font-size: 12px;
+}
+.caixaContactos{
+    background-color: #77C3EC !important;
+}
+/* botão enviar contactos */
+.btnContactosEnviar{
+    background-color: ghostwhite;
+    color: #77C3EC;
+    border-color: #77C3EC;
+    border-width: 2px;
+    margin: 25px auto;
+}
+.btnContactosEnviar:hover{
+    background-color: #77C3EC;
+    border-color: #77C3EC;
+}
+.btnContactosEnviar:active{
+    background-color: ghostwhite!important;
+    color: #77C3EC!important;
+    border-color: #77C3EC!important;
+}
+/* caixa azul com padding */
+@media only screen and (max-width: 768px){
+    .mainContactos{
+        width: 100% !important;
+        padding-bottom: 75px !important;
+    }
+}
 
