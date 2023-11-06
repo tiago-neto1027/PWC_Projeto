@@ -129,7 +129,7 @@ body{
 
 /* formatação geral para os divs da página */
 .perguntaForm{
-    margin: 25px auto 35px auto;
+    margin: 25px auto 25px auto;
 }
 
 /*Formatação geral para as sub perguntas*/
@@ -141,7 +141,7 @@ body{
 .form-control {
     border: solid black 1px;
     height: 35px;
-    margin-top: 15px;
+    margin-top: 1px;
 }
 
 /*Formatação para as perguntas com dois campos de respostas*/
@@ -222,20 +222,20 @@ input.formpolprivacidade{
     margin: 15% 1% auto auto;
 }
 
-.imagem1{
-    min-width: 100%;
-    height: 28%!important;
+.imagemFullwidth{
+    width: 100% !important;
+    height: 40% !important  ;
 }
 .img-thumbnail{
     width: 50%;
-    height: 22%;
+    height: 30%;
 }
 
 /*Adpação das imagens a tamanhos mais pequenos*/
 @media screen and (max-width: 1200px){
     .img-thumbnail{
         width: 100%;
-        height: 18%!important;
+        height: 20%;
     }
 }
 /*Banner lateral do formulário desaparece*/
@@ -252,15 +252,14 @@ input.formpolprivacidade{
 }
 
 div.lojaHeader{
-    height: 90px;
-    padding-top: 25px;
+    height: 80px;
+    padding-top: 10px;
     text-align: center;
 }
 
 h1.lojaHeader{
-    color: #9DD9F3;
     font-size: 50px;
-    text-shadow: black 3px 1px;
+    color: #9DD9F3;
 }
 .carousel-item{
     padding-left: 0;
@@ -269,5 +268,36 @@ h1.lojaHeader{
     background: lightgrey;
 }
 
+div.lojaOpcoes{
+    max-height: 50px;
+}
+
+.lojaFiltrosAberto{
+    display: none;
+}
+
+.lojaOpcoesFiltros{
+    position: absolute;
+    background: ghostwhite;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    left: -10px;
+    padding-left: 20px;
+    z-index: 100;
+    border-radius: 15px;
+}
+
+.lojaOpcoes > .btnVoltar {
+    margin-left: 15px;
+}
+.box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 99;
+}
 
 
