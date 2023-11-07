@@ -10,14 +10,14 @@ body{
 /* Página "Quem Somos" */
 .mainQuemSomos{
     padding: 25px;
-    text-align: center;   
+    text-align: center;
 }
 .mainQuemSomos hr{
-    margin:5px auto 25px;
+    margin:5px auto 25px auto;
     width:200px;
-    border:#9DD9F3 3px solid;
+    border:#77C3EC 3px solid;
     border-radius: 10px;
-    color:#9DD9F3;
+    color:#77C3EC;
     opacity: 1;
 }
 .mainQuemSomos p{
@@ -173,5 +173,196 @@ body{
     }
     .homeColumns p{
         font-size: 12px;
+    }
+}
+/*CSS Página formulário */
+/*Margens para todo o formulário*/
+.formClass{
+    margin-top: 7%;
+    margin-left: 2%;
+}
+/*Header do formulário*/
+.form-header {
+    margin-bottom: 7%;
+    font-weight: bold;
+    min-width: 100%;
+}
+/* formatação geral para os divs da página */
+.perguntaForm{
+    margin: 25px auto 35px auto;
+}
+/*Formatação geral para as sub perguntas*/
+.subPerguntas{
+    margin: 25px auto 10px 15px;
+}
+/*Caixas de input*/
+.form-control {
+    border: solid black 1px;
+    height: 35px;
+    margin-top: 15px;
+}
+/*Formatação para as perguntas com dois campos de respostas*/
+div.form-duasperguntas{
+    margin-bottom: 30px;
+}
+input.form-duasperguntas{
+    margin-top: 5px;
+}
+/*Inputs tipo radio e checkbox*/
+.form-check input[type=radio], .form-check input[type=checkbox]{
+    border: solid black 1px;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.form-check, .form-subpergunta{
+    max-width: 100%;
+    margin: 10px 5px 0 15px;
+}
+.form-check-label{
+    padding-top: 10px;
+    display: table-cell;
+    line-height: 0.6;
+}
+
+.separadorForm{
+    margin-top: 95px;
+}
+/*Campos de carater obrigatorio*/
+.campoObrigatorio{
+    color: red;
+    font-weight: bold;
+}
+/*Tamanho da letra e checkbox, politica privacidade*/
+.formpolprivacidade{
+    font-size: 13px;
+}
+label.formpolprivacidade{
+    line-height: 0.7;
+}
+input.formpolprivacidade{
+    height: 15px;
+    width: 15px;
+    border: lightgrey solid 1px !important;
+}
+/* cor para links */
+.ligacao{
+    color: #77C3EC;
+}
+/* Butão enviar, usa formatação semelhante ao btnVoltar da home page*/
+.btnEnviar{
+    background-color: ghostwhite;
+    color: #77C3EC;
+    border-color: #77C3EC;
+    border-width: 2px;
+    margin: auto auto 20px 50%;
+    width: 160px;
+    height: 50px;
+}
+.btnEnviar:hover{
+    background-color: #77C3EC;
+    border-color: #77C3EC;
+}
+.btnEnviar:active{
+    background-color: ghostwhite!important;
+    color: #77C3EC!important;
+    border-color: #77C3EC!important;
+}
+/*Formatação das imagens no banner lateral*/
+.formBanner {
+    margin: 15% 1% auto auto;
+}
+
+.imagem1{
+    min-width: 100%;
+    height: 28%!important;
+}
+.img-thumbnail{
+    width: 50%;
+    height: 22%;
+}
+/*Adpação das imagens a tamanhos mais pequenos*/
+@media screen and (max-width: 1200px){
+    .img-thumbnail{
+        width: 100%;
+        height: 18%!important;
+    }
+}
+/*Banner lateral do formulário desaparece*/
+@media screen and (max-width: 768px){
+    .formBanner{
+        display: none;
+    }
+}
+/*CSS para a página "Loja"*/
+.containerLoja{
+    min-width: 100%;
+    padding: 0;
+}
+
+div.lojaHeader{
+    height: 90px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+h1.lojaHeader{
+    color: #9DD9F3;
+    font-size: 50px;
+    text-shadow: black 3px 1px;
+}
+.carousel-item{
+    padding-left: 0;
+    width: 100vw;
+    height: 300px;
+    background: lightgrey;
+}
+/* página contactos */
+.mainContactos{
+    box-sizing: border-box;
+}
+.mainContactos h1{
+    font-size: 26px;
+    text-align: center;
+}
+.mainContactos hr{
+    margin:5px auto 25px;
+    width:200px;
+    border:#77C3EC 3px solid;
+    border-radius: 10px;
+    color:#77C3EC;
+    opacity: 1;
+}
+.mainContactos h2{
+    font-size: 22px;
+}
+.mainContactos p{
+    font-size: 12px;
+}
+.caixaContactos{
+    background-color: #77C3EC !important;
+}
+/* botão enviar contactos */
+.btnContactosEnviar{
+    background-color: ghostwhite;
+    color: #77C3EC;
+    border-color: #77C3EC;
+    border-width: 2px;
+    margin: 25px auto;
+}
+.btnContactosEnviar:hover{
+    background-color: #77C3EC;
+    border-color: #77C3EC;
+}
+.btnContactosEnviar:active{
+    background-color: ghostwhite!important;
+    color: #77C3EC!important;
+    border-color: #77C3EC!important;
+}
+/* caixa azul com padding */
+@media only screen and (max-width: 768px){
+    .mainContactos{
+        width: 100% !important;
+        padding-bottom: 75px !important;
     }
 }
