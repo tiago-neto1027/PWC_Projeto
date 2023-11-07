@@ -138,6 +138,16 @@ body{
     .firstImageTitle{
         padding: 5px;
     }
+    /* Texto das colunas da Home Page */
+    .homeColumns h1{
+        font-size: 24px;
+    }
+    .homeColumns i{
+        font-size: 24px;
+    }
+    .homeColumns p{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 450px){
     /* Imagem de Fundo Inicial */
@@ -154,6 +164,16 @@ body{
         height: 50px;
         margin-top: 5px;
     }
+    /* Texto das colunas da Home Page */
+    .homeColumns h1{
+        font-size: 20px;
+    }
+    .homeColumns i{
+        font-size: 20px;
+    }
+    .homeColumns p{
+        font-size: 12px;
+    }
 }
 /*CSS Página formulário */
 /*Margens para todo o formulário*/
@@ -161,31 +181,26 @@ body{
     margin-top: 7%;
     margin-left: 2%;
 }
-
 /*Header do formulário*/
 .form-header {
     margin-bottom: 7%;
     font-weight: bold;
     min-width: 100%;
 }
-
 /* formatação geral para os divs da página */
 .perguntaForm{
     margin: 25px auto 35px auto;
 }
-
 /*Formatação geral para as sub perguntas*/
 .subPerguntas{
     margin: 25px auto 10px 15px;
 }
-
 /*Caixas de input*/
 .form-control {
     border: solid black 1px;
     height: 35px;
     margin-top: 15px;
 }
-
 /*Formatação para as perguntas com dois campos de respostas*/
 div.form-duasperguntas{
     margin-bottom: 30px;
@@ -193,7 +208,6 @@ div.form-duasperguntas{
 input.form-duasperguntas{
     margin-top: 5px;
 }
-
 /*Inputs tipo radio e checkbox*/
 .form-check input[type=radio], .form-check input[type=checkbox]{
     border: solid black 1px;
@@ -201,12 +215,10 @@ input.form-duasperguntas{
     height: 20px;
     margin-right: 15px;
 }
-
 .form-check, .form-subpergunta{
     max-width: 100%;
     margin: 10px 5px 0 15px;
 }
-
 .form-check-label{
     padding-top: 10px;
     display: table-cell;
@@ -216,7 +228,6 @@ input.form-duasperguntas{
 .separadorForm{
     margin-top: 95px;
 }
-
 /*Campos de carater obrigatorio*/
 .campoObrigatorio{
     color: red;
@@ -226,7 +237,6 @@ input.form-duasperguntas{
 .formpolprivacidade{
     font-size: 13px;
 }
-
 label.formpolprivacidade{
     line-height: 0.7;
 }
@@ -258,7 +268,6 @@ input.formpolprivacidade{
     color: #77C3EC!important;
     border-color: #77C3EC!important;
 }
-
 /*Formatação das imagens no banner lateral*/
 .formBanner {
     margin: 15% 1% auto auto;
@@ -272,7 +281,6 @@ input.formpolprivacidade{
     width: 50%;
     height: 22%;
 }
-
 /*Adpação das imagens a tamanhos mais pequenos*/
 @media screen and (max-width: 1200px){
     .img-thumbnail{
@@ -286,7 +294,6 @@ input.formpolprivacidade{
         display: none;
     }
 }
-
 /*CSS para a página "Loja"*/
 .containerLoja{
     min-width: 100%;
@@ -359,4 +366,3 @@ h1.lojaHeader{
         padding-bottom: 75px !important;
     }
 }
-
