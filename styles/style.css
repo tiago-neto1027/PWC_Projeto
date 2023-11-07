@@ -138,6 +138,16 @@ body{
     .firstImageTitle{
         padding: 5px;
     }
+    /* Texto das colunas da Home Page */
+    .homeColumns h1{
+        font-size: 24px;
+    }
+    .homeColumns i{
+        font-size: 24px;
+    }
+    .homeColumns p{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 450px){
     /* Imagem de Fundo Inicial */
@@ -153,5 +163,15 @@ body{
     .firstImageButton{
         height: 50px;
         margin-top: 5px;
+    }
+    /* Texto das colunas da Home Page */
+    .homeColumns h1{
+        font-size: 20px;
+    }
+    .homeColumns i{
+        font-size: 20px;
+    }
+    .homeColumns p{
+        font-size: 12px;
     }
 }
