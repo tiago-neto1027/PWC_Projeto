@@ -1,0 +1,128 @@
+/* Imagem de Fundo Inicial */
+.firstImage{
+    /* Centra o conteudo na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Define o background */
+    background-image: url("../imgs/home.jpeg");
+    background-repeat: no-repeat;
+    height: calc(100vh - 55.96px);
+    background-position: 85%;
+    background-size: cover;
+    opacity: 0.85;
+}
+/* Titulo sobre a imagem inicial */
+.firstImageTitle{
+    /* Background */
+    background-color: rgba(155,216,243, 0.4);
+    border: 3px solid ghostwhite;
+    /* Texto */
+    color: ghostwhite;
+    font-weight: bold;
+    text-shadow: 2px 1px 2px black;
+    /* Posição */
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    min-width: 200px;
+}
+/* Botão sobre a imagem inicial (Usa a formatação do btnVoltar) */
+.firstImageButton{
+    height: 60px;
+    border-width: 4px;
+    min-width: 125px;
+    max-width: 300px;
+    margin-top: 25px;
+}
+/* Colunas da HomePage */
+.homeColumns{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    column-gap: 30px;
+}
+.homeColumns h1{
+    font-size: 32px;
+    padding-top: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+.homeColumns i{
+    font-size: 32px;
+}
+.homeColumns p{
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+}
+.homeColumns .btn-dark{
+    margin-bottom: 20px;
+}
+.coluna1{
+    background: #eaeaea;
+}
+.coluna2{
+    background: #9DD9F3;
+}
+.coluna3{
+    background: #77C3EC;
+}
+/* Design reativo */
+@media screen and (max-width: 992px){
+    .homeColumns{
+        display: inherit;
+    }
+    .coluna1, .coluna2{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    /* Imagem de Fundo Inicial */
+    .firstImage{
+        height: 40vh;
+        background-size: cover;
+        background-position: 85% 70%;
+    }
+    /* Titulo sobre a imagem inicial */
+    .firstImageTitle{
+        padding: 5px;
+    }
+    /* Texto das colunas da Home Page */
+    .homeColumns h1{
+        font-size: 24px;
+    }
+    .homeColumns i{
+        font-size: 24px;
+    }
+    .homeColumns p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 450px){
+    /* Imagem de Fundo Inicial */
+    .firstImage{
+        height: 22vh;
+        background-position: 85% 65%;
+    }
+    /* Titulo sobre a imagem inicial */
+    .firstImageTitle{
+        font-size: 18px;
+    }
+    /* Botão sobre a imagem inicial */
+    .firstImageButton{
+        height: 50px;
+        margin-top: 5px;
+    }
+    /* Texto das colunas da Home Page */
+    .homeColumns h1{
+        font-size: 20px;
+    }
+    .homeColumns i{
+        font-size: 20px;
+    }
+    .homeColumns p{
+        font-size: 12px;
+    }
+}

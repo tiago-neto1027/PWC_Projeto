@@ -1,0 +1,16 @@
+/* página contactos */
+.caixaContactos{
+    background-color: #77C3EC!important;
+}
+.mainContactos{
+    box-sizing: border-box;
+}
+.mainContactos p{
+    font-size: 12px;
+}
+@media only screen and (max-width: 768px){
+    .mainContactos{
+        width: 100% !important;
+        padding-bottom: 75px !important;
+    }
+}
