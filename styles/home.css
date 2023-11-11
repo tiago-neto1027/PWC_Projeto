@@ -33,29 +33,13 @@
     border-width: 4px;
     min-width: 125px;
     max-width: 300px;
-    margin-top: 25px;
 }
 /* Colunas da HomePage */
 .homeColumns{
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
     column-gap: 30px;
 }
 .homeColumns h1{
-    font-size: 32px;
-    padding-top: 30px;
-    font-weight: bold;
     border-bottom: 2px solid white;
-    padding-bottom: 10px;
-}
-.homeColumns i{
-    font-size: 32px;
-}
-.homeColumns p{
-    text-align: left;
-    padding: 10px;
-    font-size: 18px;
 }
 .homeColumns .btn-dark{
     margin-bottom: 20px;
@@ -70,14 +54,6 @@
     background: #77C3EC;
 }
 /* Design reativo */
-@media screen and (max-width: 992px){
-    .homeColumns{
-        display: inherit;
-    }
-    .coluna1, .coluna2{
-        margin-bottom: 10px;
-    }
-}
 @media screen and (max-width: 768px){
     /* Imagem de Fundo Inicial */
     .firstImage{
@@ -88,16 +64,6 @@
     /* Titulo sobre a imagem inicial */
     .firstImageTitle{
         padding: 5px;
-    }
-    /* Texto das colunas da Home Page */
-    .homeColumns h1{
-        font-size: 24px;
-    }
-    .homeColumns i{
-        font-size: 24px;
-    }
-    .homeColumns p{
-        font-size: 14px;
     }
 }
 @media screen and (max-width: 450px){
@@ -114,15 +80,5 @@
     .firstImageButton{
         height: 50px;
         margin-top: 5px;
-    }
-    /* Texto das colunas da Home Page */
-    .homeColumns h1{
-        font-size: 20px;
-    }
-    .homeColumns i{
-        font-size: 20px;
-    }
-    .homeColumns p{
-        font-size: 12px;
     }
 }

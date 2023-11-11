@@ -8,9 +8,11 @@
 .mainContactos p{
     font-size: 12px;
 }
-@media only screen and (max-width: 768px){
-    .mainContactos{
-        width: 100% !important;
-        padding-bottom: 75px !important;
+@media screen and (max-width: 768px){
+    .caixaContactos{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-bottom-left-radius: 40px;
+        border-top-right-radius: 40px;
     }
 }
