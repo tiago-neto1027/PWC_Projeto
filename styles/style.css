@@ -366,3 +366,27 @@ h1.lojaHeader{
         padding-bottom: 75px !important;
     }
 }
+/* Favoritos */
+.Titulo{
+    font-size: 26px;
+    text-align: center;
+}
+.hrTitulo{
+    margin:5px auto 55px;
+    width:200px;
+    border:#77C3EC 3px solid;
+    border-radius: 10px;
+    color:#77C3EC;
+    opacity: 1;
+}
+.mainBody{
+    margin-top: 30px;
+}
+.card{
+    width: 18rem;
+    display: inline-block;
+}
+/* temporario */
+.card img{
+    width: 100%;
+}
