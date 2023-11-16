@@ -84,16 +84,10 @@ input.formpolprivacidade{
     height: 28%!important;
 }
 .img-thumbnail{
-    width: 50%;
-    height: 22%;
+    width: 100%;;
+    height: 18%;
 }
-/*Adpação das imagens a tamanhos mais pequenos*/
-@media screen and (max-width: 1200px){
-    .img-thumbnail{
-        width: 100%;
-        height: 18%!important;
-    }
-}
+
 /*Banner lateral do formulário desaparece*/
 @media screen and (max-width: 768px){
     .formBanner{
