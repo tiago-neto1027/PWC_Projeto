@@ -42,10 +42,6 @@
 .form-label{
     font-weight: normal;
 }
-
-.separadorForm{
-    margin-top: 95px;
-}
 /*Campos de carater obrigatorio*/
 .campoObrigatorio{
     color: red;
@@ -54,9 +50,6 @@
 /*Tamanho da letra e checkbox, politica privacidade*/
 .formpolprivacidade{
     font-size: 13px;
-}
-label.formpolprivacidade{
-    line-height: 0.7;
 }
 input.formpolprivacidade{
     height: 15px;
