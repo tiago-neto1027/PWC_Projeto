@@ -12,7 +12,7 @@
 }
 /* formatação geral para os divs da página */
 .perguntaForm{
-    margin: 25px auto 35px auto;
+    margin: 20px auto 25px auto;
 }
 /*Formatação geral para as sub perguntas*/
 .subPerguntas{
@@ -22,15 +22,9 @@
 .form-control {
     border: solid black 1px;
     height: 35px;
-    margin-top: 15px;
+    margin: 10px auto 8px auto;
 }
-/*Formatação para as perguntas com dois campos de respostas*/
-div.form-duasperguntas{
-    margin-bottom: 30px;
-}
-input.form-duasperguntas{
-    margin-top: 5px;
-}
+
 /*Inputs tipo radio e checkbox*/
 .form-check input[type=radio], .form-check input[type=checkbox]{
     border: solid black 1px;
@@ -43,9 +37,10 @@ input.form-duasperguntas{
     margin: 10px 5px 0 15px;
 }
 .form-check-label{
-    padding-top: 10px;
     display: table-cell;
-    line-height: 0.6;
+}
+.form-label{
+    font-weight: normal;
 }
 
 .separadorForm{
@@ -72,25 +67,13 @@ input.formpolprivacidade{
 .ligacao{
     color: #77C3EC;
 }
-/* Butão enviar, usa formatação semelhante ao btnVoltar da home page*/
-.btnEnviar{
-    background-color: ghostwhite;
-    color: #77C3EC;
-    border-color: #77C3EC;
-    border-width: 2px;
+/* Butão enviar*/
+.mainBtn{
     margin: auto auto 20px 50%;
     width: 160px;
     height: 50px;
 }
-.btnEnviar:hover{
-    background-color: #77C3EC;
-    border-color: #77C3EC;
-}
-.btnEnviar:active{
-    background-color: ghostwhite!important;
-    color: #77C3EC!important;
-    border-color: #77C3EC!important;
-}
+
 /*Formatação das imagens no banner lateral*/
 .formBanner {
     margin: 15% 1% auto auto;

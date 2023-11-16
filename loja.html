@@ -49,77 +49,351 @@
           </nav>
     </header>
     <!-- Conteúdo da Página -->
-    <div class="containerLoja">
-        <div class="lojaHeader text-center pt-3">
-            <h1 class="lojaHeader">Novidades</h1>
-        </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+    <!-- Barra de filtros -->
+    <div class="filterBar">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" id="todos" href="#">Todos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="racoes" href="#">Rações</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="snacks" href="#">Snacks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="acessPasseio" href="#">Acessórios de passeio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="brinquedos" href="#">Brinquedos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="acessCasa" href="#">Acessórios para a casa</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Items na loja -->
+    <div class="container text-center overflow-hidden">
+        <div class="row gy-4 gx-4 justify-content-center">
+            <!-- Rações -->
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer racoes">
+                <div class="card">
+                    <img src="imgs/loja-imgs/racaoXsmall.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração X-small</h5>
+                        <p class="card-text ">Ração royal canin<p>4 kg</p></p>
+                        <div class="cardBotoes options">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer racoes">
+                <div class="card">
+                    <img src="imgs/loja-imgs/racaoMini.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração Mini</h5>
+                        <p class="card-text ">Ração royal canin<p>4 kg</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <div class="lojaOpcoes">
-                <button class="btn btn-outline-primary btnVoltar" type="button" id="lojabotafiltros">
-                    Filtros
-                </button>
-        </div>
-        <div class="lojaFiltrosAberto" id="lojafiltrosaberto">
-            <div class="lojaOpcoesFiltros">
-                <label>Filtros</label>
-                <ul class="lojaListaOpcoes">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <!--<div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btnVoltar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div> -->
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer racoes">
+                <div class="card">
+                    <img src="imgs/loja-imgs/racaoMedium.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração Medium</h5>
+                        <p class="card-text ">Ração royal canin<p>4 kg</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="box"></div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer racoes">
+                <div class="card">
+                    <img src="imgs/loja-imgs/racaoMaxi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração Maxi</h5>
+                        <p class="card-text ">Ração royal canin<p>4 kg</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Snacks -->
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer snacks">
+                <div class="card">
+                    <img src="imgs/loja-imgs/milkBone.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Milk-Bone</h5>
+                        <p class="card-text ">Marrow snacks<p>1.2 kg</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer snacks">
+                <div class="card">
+                    <img src="imgs/loja-imgs/pupPeroni.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pup-Peroni</h5>
+                        <p class="card-text ">Round snacks<p>580 gr</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer snacks">
+                <div class="card">
+                    <img src="imgs/loja-imgs/ossoRoer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ossos para roer</h5>
+                        <p class="card-text ">100% naturais<p>2 uni</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Acessórios de passeio -->
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer acessPasseio">
+                <div class="card">
+                    <img src="imgs/loja-imgs/coleteAmarelo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Colete amarelo</h5>
+                        <p class="card-text ">Colete amarelo<p>Pequeno</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer acessPasseio">
+                <div class="card">
+                    <img src="imgs/loja-imgs/coleteTubarao.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Colete tubarão</h5>
+                        <p class="card-text ">Colete tubarão<p></p><p>Médio</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer acessPasseio">
+                <div class="card">
+                    <img src="imgs/loja-imgs/acaimePreto.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Açaime preto</h5>
+                        <p class="card-text ">Açaime preto<p>Médio</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer acessPasseio">
+                <div class="card">
+                    <img src="imgs/loja-imgs/trelaVermelha.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Trela vermelha</h5>
+                        <p class="card-text ">Trela vermelha<p>3 m</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer acessPasseio">
+                <div class="card">
+                    <img src="imgs/loja-imgs/trelaPreta.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Trela preta</h5>
+                        <p class="card-text ">Trela preta<p>6 m</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brinquedos -->
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer brinquedos">
+                <div class="card">
+                    <img src="imgs/loja-imgs/bolaLaranja.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bola laranja</h5>
+                        <p class="card-text "></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer brinquedos">
+                <div class="card">
+                    <img src="imgs/loja-imgs/conjuntoBolas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Conjunto bolas</h5>
+                        <p class="card-text "></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer brinquedos">
+                <div class="card">
+                    <img src="imgs/loja-imgs/galinha.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Galinha borracha</h5>
+                        <p class="card-text "></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer brinquedos">
+                <div class="card">
+                    <img src="imgs/loja-imgs/jogo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo educativo</h5>
+                        <p class="card-text "></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acessórios para a casa -->
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer acessCasa">
+                <div class="card">
+                    <img src="imgs/loja-imgs/camaRedonda.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cama redonda</h5>
+                        <p class="card-text ">Cama redonda<p></p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer acessCasa">
+                <div class="card">
+                    <img src="imgs/loja-imgs/camaRetangular.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cama retangular</h5>
+                        <p class="card-text ">Cama retangular<p>50 cm</p></p>
+                        <div class="cardBotoes">
+                            <a href="#" class="btn btn-outline-primary mainBtn">Comprar</a>
+                            <div>
+                                <button class="btn btn-danger cardBotao menos">−</button>
+                                <input class="cardInput resultado" type="number" value="0" />
+                                <button class="btn btn-success cardBotao mais" >+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
+    </div>
     <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="scripts/loja.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

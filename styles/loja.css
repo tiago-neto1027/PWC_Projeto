@@ -1,20 +1,69 @@
 /*CSS para a página "Loja"*/
-.containerLoja{
-    min-width: 100%;
+/*Container principal da loja*/
+.container{
+    margin-top: 50px;
 }
 
-div.lojaHeader{
-    height: 90px;
+/*Barra de filtros*/
+.filterBar{
+    margin-top: 50px;
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    background: rgba(211,211,211,20%);
 }
 
-h1.lojaHeader{
-    color: #9DD9F3;
-    font-size: 50px;
-    text-shadow: black 3px 1px;
+.nav-link{
+    color: black;
 }
-.carousel-item{
-    padding-left: 0;
-    width: 100vw;
-    height: 300px;
-    background: lightgrey;
+
+.nav-link:hover, .nav-link:focus{
+    color: #77C3EC;
+    font-weight: bold;
+    background: rgba(211,211,211,40%);
 }
+
+/*Cartões da loja*/
+.card:hover{
+    padding: 5px;
+    border: 1px solid grey;
+    transition: 0.4s;
+}
+/*Div ondes testão os botões de +,- e a caixa com a quantidade de produtos a comprar*/
+.cardBotoes{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/*Botões de + e - dentros dos cartões de produtos*/
+.cardBotao{
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+/*Input onde é mostrada a quantidade de produtos a comprar*/
+.cardInput{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px lightgray;
+    text-align: center;
+}
+/*Remove as setas de incremento manual dentro do input type "number"*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+/*Botão "comprar" dentro dos cartões de produtos*/
+.mainBtn{
+    max-height: 30px;
+    width: 80px;
+    padding: 0;
+}
+
