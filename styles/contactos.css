@@ -1,9 +1,11 @@
 /* página contactos */
 .caixaContactos{
     background-color: #77C3EC!important;
+    border-radius: 5px;
 }
 .mainContactos{
     box-sizing: border-box;
+    margin-bottom: 25px;
 }
 .mainContactos p{
     font-size: 12px;
