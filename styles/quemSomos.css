@@ -1,0 +1,35 @@
+/* CSS página Quem Somos */
+
+/* Cards */
+.QuemSomosCard_Container{
+    display: grid;
+    place-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-block: 2.5rem;
+    
+}
+.card{
+    border-color: #77C3EC;
+    border-width: 2.5px;
+    border-radius: 1rem;
+}
+.Card_Container{
+    margin-top: 10px;
+    display:grid;
+    row-gap: 1.5rem; 
+}
+/* BreakPoints */
+/* Tablet */ 
+@media screen and (min-width:481px) {
+    .Card_Container{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1.5rem;
+    }
+}
+/* Desktop */
+@media screen and (min-width:769px) {
+    .Card_Container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
