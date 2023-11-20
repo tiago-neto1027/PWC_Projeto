@@ -53,6 +53,9 @@
 .coluna3{
     background: #77C3EC;
 }
+.mainBtn{
+    padding-top: 10px
+}
 /* Design reativo */
 @media screen and (max-width: 768px){
     /* Imagem de Fundo Inicial */
