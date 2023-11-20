@@ -28,11 +28,12 @@
     min-width: 200px;
 }
 /* Botão sobre a imagem inicial (Usa a formatação do btnVoltar) */
-.firstImageButton{
-    height: 60px;
+.firstImageButton, .firstImageButton:hover{
     border-width: 4px;
     min-width: 125px;
     max-width: 300px;
+    border-color: black;
+    border-width: 2px;
 }
 /* Colunas da HomePage */
 .homeColumns{
