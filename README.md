@@ -22,6 +22,11 @@
 
 - Página de contactos para facilitar o envio de mensagens para a equipa.
 
+## Elementos
+ - Gonçalo Leitão - nº 2230238
+ - Pedro Sousa - nº 2231433
+ - Tiago Neto - nº 2230239
+
 ### Link para o repositório público
 
 **[Repositório Público](https://github.com/tiago-neto1027/PWC_Projeto)**
