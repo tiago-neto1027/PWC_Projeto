@@ -13,11 +13,11 @@
     background: rgba(211,211,211,20%);
 }
 
-.nav-link{
+.filterBar a{
     color: black;
 }
 
-.nav-link:hover, .nav-link:focus{
+.filterBar a:active, .filterBar a:hover{
     color: #77C3EC;
     font-weight: bold;
     background: rgba(211,211,211,40%);
@@ -27,7 +27,7 @@
 .card:hover{
     padding: 5px;
     border: 1px solid grey;
-    transition: 0.4s;
+    transition: 0.1s;
 }
 /*Div ondes testão os botões de +,- e a caixa com a quantidade de produtos a comprar*/
 .cardBotoes{
