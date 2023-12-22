@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <title>AdoptaPet</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -49,7 +50,25 @@
     </header>
     <!-- Conteúdo da Página -->
 
+    <div class="container mt-5">
+        <h1 class="text-center">Cães para Adoção</h1>
+        <hr class="mb-5">
+        <div class="row dog_list">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card mainCard dog_card border-info m-3">
+                    <div class="card-body text-center">
+                        <img class="w-75 rounded dog_image" alt="dog picture">
+                        <h5 class="card-title mt-3 dog_name"></h5>
+                        <p class="card-text dog_description"></p>
+                        <a href="#" class="btn btn-danger">Remover dos Favoritos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript -->
+    <script src="/scripts/api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

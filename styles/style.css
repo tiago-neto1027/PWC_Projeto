@@ -54,3 +54,7 @@ span{
     width: 18rem;
     display: inline-block;
 }
+.mainCard img{
+    max-width: 400px;
+    height: 200px;
+}
