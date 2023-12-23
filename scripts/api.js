@@ -32,7 +32,7 @@ $.ajax({
                         $(".dog_image", card).attr("src", "/imgs/noImg.webp");
                     }
                     $(".dog_name", card).text(dog.name);
-                    $(".dog_description", card).text(dog.age);
+                    $(".dog_race", card).text("Race: "+dog.breeds.primary);
                     $(".dog_list").append(card);
                 })
             },
