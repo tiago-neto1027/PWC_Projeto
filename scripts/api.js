@@ -42,6 +42,7 @@ function pedirCaes(apiToken) {
                     }
                     $(".dog_name", card).text(dog.name);
                     $(".dog_race", card).text("Race: "+dog.breeds.primary);
+                    $(".dog_details", card).attr("href", "/detalhes.html?id="+dog.id);
                     $(".dog_list").append(card);
             });
         },
