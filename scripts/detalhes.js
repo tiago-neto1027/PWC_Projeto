@@ -5,7 +5,6 @@ $(document).ready(function() {
     }
     
     const dogId = caoID('id');
-    console.log(dogId);
     
     function pedirToken(callback){
         const APIKey = 'Fys3fB3GFFSgI95ovUKCcmzJU2o5yLwJNBAhygqfjBFZf23W1A';
