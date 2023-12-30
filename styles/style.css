@@ -34,16 +34,32 @@ span{
 
 /* Botão principal */
 .mainBtn{
+    background-color: #77C3EC;
+    color: ghostwhite;
+    border: 2px solid black;
+}
+.mainBtn:hover{
+    background-color: ghostwhite;
+    color: #77C3EC;
+    border: 2px solid black;
+}
+.mainBtn:active{
+    background-color: ghostwhite!important;
+    color: #77C3EC!important;
+}
+
+/* Botão standard de Fundo Branco */
+.whiteBtn{
     background-color: ghostwhite;
     color: #77C3EC;
     border-color: #77C3EC;
     border-width: 2px;
 }
-.mainBtn:hover{
+.whiteBtn:hover{
     background-color: #77C3EC;
     border-color: #77C3EC;
 }
-.mainBtn:active{
+.whiteBtn:active{
     background-color: ghostwhite!important;
     color: #77C3EC!important;
     border-color: #77C3EC!important;
