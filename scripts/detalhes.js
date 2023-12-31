@@ -55,6 +55,9 @@ $(document).ready(function() {
                     var li = $("<li>").text(tag);
                     $(".tags_list").append(li);
                 });
+                if(dog.animal.tags == 0){
+                    $(".tags_list").append($("<li>").text("Sem tags"));
+                }
 
                 $(".dog_tags").text(dog.animal.tags || "Sem etiquetas");
                 $(".dog_email").text("Email: " + (dog.animal.email || "Sem contacto"));
