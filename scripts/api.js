@@ -32,6 +32,7 @@ function pedirCaes(apiToken) {
             xhr.setRequestHeader('Authorization', 'Bearer ' + apiToken);
         },
         success: function (data) {
+            document.querySelector('.loading').remove();
             $.each(data.animals, function (index, dog) {
                 var card = cloneCard.clone();
                     card.addClass("mx-auto text-center");

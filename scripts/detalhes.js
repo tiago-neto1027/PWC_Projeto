@@ -40,9 +40,8 @@ $(document).ready(function() {
                 $(".dog_color").text(dog.animal.colors.primary || "Sem cor definida");
                 $(".dog_age").text(dog.animal.age || "Sem idade definida");
                 $(".dog_size").text(dog.animal.size || "Sem tamanho definido");
-                //Converte os caracteres estranhos para texto usando a biblioteca he
-                var decodedDescription = he.decode(dog.animal.description);
-                $(".dog_description").text(decodedDescription || "Sem descrição");
+                /* Tirei a formatação de texto para caracteres normais devido a erros temporarios na biblioteca he que convertia os caracteres */
+                $(".dog_description").text(dog.animal.description || "Sem descrição");
                 $(".dog_tags").text(dog.animal.tags || "Sem etiquetas");
                 $(".dog_email").text("Email: " + (dog.animal.email || "Sem contacto"));
                 $(".dog_phone").text("Telefone: " + (dog.animal.phone || "Sem contacto"));
@@ -58,7 +57,7 @@ $(document).ready(function() {
     function updateCarousel(photos) {
         var carouselInner = $(".carousel-inner");
         carouselInner.empty();
-    
+
         if (photos && photos.length > 0) {
             photos.forEach(function (photo, index) {
                 var imagemAtiva = index === 0 ? "active" : "";
