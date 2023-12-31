@@ -35,18 +35,27 @@ $(document).ready(function() {
                 xhr.setRequestHeader('Authorization', 'Bearer ' + apiToken);
             },
             success: function (dog) {
-                console.log(dog);
                 $(".dog_name").text(dog.animal.name || "Sem Nome");
                 $(".dog_breed").text(dog.animal.breeds.primary || "Sem raça definida");
                 $(".dog_color").text(dog.animal.colors.primary || "Sem cor definida");
                 $(".dog_age").text(dog.animal.age || "Sem idade definida");
                 $(".dog_size").text(dog.animal.size || "Sem tamanho definido");
-                /* Tirei a formatação de texto para caracteres normais devido a erros temporarios na biblioteca he que convertia os caracteres */
-                $(".dog_description").text(dog.animal.description || "Sem descrição");
+
+                //Descricao (Isto remove os caracteres estranhos na apresentacao da descricao)
+                //Esta escrito desta forma pois a biblioteca da he às vezes parava de funcionar
+                function decodeDescription(html) {
+                    var tempElement = document.createElement('div');
+                    tempElement.innerHTML = html;
+                    return tempElement.textContent || tempElement.innerText;
+                }
+                $(".dog_description").text(decodeDescription(dog.animal.description) || "Sem descrição");
+
+                //Tags
                 dog.animal.tags.forEach(function (tag) {
                     var li = $("<li>").text(tag);
                     $(".tags_list").append(li);
                 });
+
                 $(".dog_tags").text(dog.animal.tags || "Sem etiquetas");
                 $(".dog_email").text("Email: " + (dog.animal.email || "Sem contacto"));
                 $(".dog_phone").text("Telefone: " + (dog.animal.phone || "Sem contacto"));
