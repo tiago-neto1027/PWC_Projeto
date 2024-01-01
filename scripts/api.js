@@ -40,7 +40,7 @@ function pedirCaes(apiToken) {
             $.each(data.animals, function (index, dog) {
                 if (!dogNames.includes(dog.name)) {
                     dogNames.push(dog.name);
-            
+                    
                     var card = cloneCard.clone();
                     card.addClass("mx-auto text-center");
                     if (dog.photos && dog.photos.length > 0) {
@@ -58,7 +58,7 @@ function pedirCaes(apiToken) {
                     if (favoriteDogIds.includes(String(dog.id))) {
                         $("#favoritos", card).removeClass("btn-success").addClass("btn-danger");
                     }
-            
+
                     $(".dog_list").append(card);
                 }
             });

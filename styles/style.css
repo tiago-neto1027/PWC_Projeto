@@ -79,6 +79,19 @@ span{
     height: 40px;
 }
 
+.mainCard .row {
+    margin-top: 80px;
+}
+
+.dog_details, #favoritos{
+    position: absolute;
+    bottom: 5%;
+}
+
+#favoritos{
+    right: 15%;
+}
+
 /* Loading */
 
 .loading {
