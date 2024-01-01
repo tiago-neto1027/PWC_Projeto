@@ -11,12 +11,15 @@
 .conteudo{
     background-color: rgba(119, 195, 236, 40%);
 }
-.conteudo p{
+.conteudo p, .tags_list{
+    list-style: none;
     font-size: 18px;
     color: rgb(82, 82, 82);
     background-color: #f8f9fa;
     margin: 0;
     padding-left: 10px;
+    overflow: scroll;
+    min-width: 130px;
 }
 .conteudo span{
     color: black;

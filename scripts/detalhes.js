@@ -40,9 +40,25 @@ $(document).ready(function() {
                 $(".dog_color").text(dog.animal.colors.primary || "Sem cor definida");
                 $(".dog_age").text(dog.animal.age || "Sem idade definida");
                 $(".dog_size").text(dog.animal.size || "Sem tamanho definido");
-                //Converte os caracteres estranhos para texto usando a biblioteca he
-                var decodedDescription = he.decode(dog.animal.description);
-                $(".dog_description").text(decodedDescription || "Sem descrição");
+
+                //Descricao (Isto remove os caracteres estranhos na apresentacao da descricao)
+                //Esta escrito desta forma pois a biblioteca da he às vezes parava de funcionar
+                function decodeDescription(html) {
+                    var tempElement = document.createElement('div');
+                    tempElement.innerHTML = html;
+                    return tempElement.textContent || tempElement.innerText;
+                }
+                $(".dog_description").text(decodeDescription(dog.animal.description) || "Sem descrição");
+
+                //Tags
+                dog.animal.tags.forEach(function (tag) {
+                    var li = $("<li>").text(tag);
+                    $(".tags_list").append(li);
+                });
+                if(dog.animal.tags == 0){
+                    $(".tags_list").append($("<li>").text("Sem tags"));
+                }
+
                 $(".dog_tags").text(dog.animal.tags || "Sem etiquetas");
                 $(".dog_email").text("Email: " + (dog.animal.email || "Sem contacto"));
                 $(".dog_phone").text("Telefone: " + (dog.animal.phone || "Sem contacto"));
@@ -58,7 +74,7 @@ $(document).ready(function() {
     function updateCarousel(photos) {
         var carouselInner = $(".carousel-inner");
         carouselInner.empty();
-    
+
         if (photos && photos.length > 0) {
             photos.forEach(function (photo, index) {
                 var imagemAtiva = index === 0 ? "active" : "";
