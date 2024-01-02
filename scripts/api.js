@@ -34,6 +34,7 @@ function pedirCaes(apiToken) {
         success: function (data) {
             if(document.querySelector('.loading')){
                 document.querySelector('.loading').remove();
+                $("#carregarMais").removeClass('d-none');
             }
             
             var dogNames = [];
