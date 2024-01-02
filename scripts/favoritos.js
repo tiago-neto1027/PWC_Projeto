@@ -44,7 +44,7 @@ pedirToken(function(apiToken) {
                     if (dog.animal.photos && dog.animal.photos.length > 0) {
                         $(".dog_image", card).attr("src", "https://photos.petfinder.com/photos/pets/" + dog.animal.id + "/1/?bust=1546042081&width=300");
                     } else {
-                        $(".dog_image", card).attr("src", "/imgs/noImg.webp");
+                        $(".dog_image", card).attr("src", "imgs/noImg.webp");
                     }
                     $(".dog_name", card).text(dog.animal.name);
                     $(".dog_name", card).addClass("id-" + dog.animal.id);

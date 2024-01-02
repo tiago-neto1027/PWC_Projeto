@@ -85,7 +85,7 @@ $(document).ready(function() {
             });
         } else {
             var semImagens = '<div class="carousel-item active">' +
-            '<img src="/imgs/noImg.webp" class="dog_image d-block" alt="dog image">' +
+            '<img src="imgs/noImg.webp" class="dog_image d-block" alt="dog image">' +
             '</div>';
         carouselInner.append(semImagens);
         }

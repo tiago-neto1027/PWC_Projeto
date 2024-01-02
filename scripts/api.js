@@ -47,12 +47,12 @@ function pedirCaes(apiToken) {
                     if (dog.photos && dog.photos.length > 0) {
                         $(".dog_image", card).attr("src", "https://photos.petfinder.com/photos/pets/" + dog.id + "/1/?bust=1546042081&width=300");
                     } else {
-                        $(".dog_image", card).attr("src", "/imgs/noImg.webp");
+                        $(".dog_image", card).attr("src", "imgs/noImg.webp");
                     }
                     $(".dog_name", card).text(dog.name);
                     $(".dog_name", card).addClass("id-" + dog.id);
                     $(".dog_race", card).text("Race: " + dog.breeds.primary);
-                    $(".dog_details", card).attr("href", "/detalhes.html?id=" + dog.id);
+                    $(".dog_details", card).attr("href", "detalhes.html?id=" + dog.id);
             
                     //Verifica se o cao esta nos favoritos e muda o botao de acordo
                     var favoriteDogIds = JSON.parse(localStorage.getItem("favoriteDogIds")) || [];
