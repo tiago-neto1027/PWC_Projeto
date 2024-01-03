@@ -54,6 +54,7 @@ pedirToken(function(apiToken) {
                 },
                 error: function (erro) {
                     console.error('Erro ao pedir os detalhes do cão com ID ' + dogId + ':', erro);
+                    //Remove o cao dos favoritos caso ja nao exista na base de dados
                     console.log("Removemos o cao dos favoritos.");
                     if (erro.status === 404) {
                         console.log("Removemos o cão dos favoritos.");
