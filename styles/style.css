@@ -83,12 +83,12 @@ span{
     margin-top: 80px;
 }
 
-.dog_details, #favoritos{
+.dog_details, .favoritos{
     position: absolute;
     bottom: 5%;
 }
 
-#favoritos{
+.favoritos{
     right: 15%;
 }
 

@@ -5,6 +5,36 @@ const Secret = 'BGHAbrNUtZMDu6gTOrH0TpqsWCPnOFNsoLasWFPb';
 const cloneCard = $(".dog_card").clone();
 $('.dog_list').empty();
 
+//Botao de favoritos
+$(".dog_list").on("click", ".favoritos", function botaoFavoritos() {
+    var card = $(this).closest(".mainCard");
+    //Primeiro vai buscar a classe que tem o id do cao e dps tira o "id-" e armazena na variavel dogId
+    var dogIdClass = card.find(".dog_name").attr("class").split(" ").filter(c => c.startsWith("id-"))[0];
+    var dogId = dogIdClass ? dogIdClass.split("-")[1] : null;
+
+    //Vai buscar a lista de caes existentes
+    var favoriteDogIds = JSON.parse(localStorage.getItem("favoriteDogIds")) || [];
+
+    if (!favoriteDogIds.includes(dogId)) {
+        //Adiciona o cao aos favoritos
+        favoriteDogIds.push(dogId);
+        localStorage.setItem("favoriteDogIds", JSON.stringify(favoriteDogIds));
+
+        $(this).removeClass("btn-success").addClass("btn-danger");
+    } else {
+        //Remove o cao dos favoritos
+        favoriteDogIds = favoriteDogIds.filter(id => id !== dogId);
+        localStorage.setItem("favoriteDogIds", JSON.stringify(favoriteDogIds));
+
+        $(this).removeClass("btn-danger").addClass("btn-success");
+    }
+});
+
+//Favoritos
+function saveToCache(key, value) {
+    localStorage.setItem(key, value);
+}
+
 function pedirToken(callback) {
     $.ajax({
         url: 'https://api.petfinder.com/v2/oauth2/token',
@@ -32,16 +62,16 @@ function pedirCaes(apiToken) {
             xhr.setRequestHeader('Authorization', 'Bearer ' + apiToken);
         },
         success: function (data) {
-            if(document.querySelector('.loading')){
+            if (document.querySelector('.loading')) {
                 document.querySelector('.loading').remove();
                 $("#carregarMais").removeClass('d-none');
             }
-            
+
             var dogNames = [];
             $.each(data.animals, function (index, dog) {
                 if (!dogNames.includes(dog.name)) {
                     dogNames.push(dog.name);
-                    
+
                     var card = cloneCard.clone();
                     card.addClass("mx-auto text-center");
                     if (dog.photos && dog.photos.length > 0) {
@@ -53,7 +83,7 @@ function pedirCaes(apiToken) {
                     $(".dog_name", card).addClass("id-" + dog.id);
                     $(".dog_race", card).text("Race: " + dog.breeds.primary);
                     $(".dog_details", card).attr("href", "detalhes.html?id=" + dog.id);
-            
+
                     //Verifica se o cao esta nos favoritos e muda o botao de acordo
                     var favoriteDogIds = JSON.parse(localStorage.getItem("favoriteDogIds")) || [];
                     if (favoriteDogIds.includes(String(dog.id))) {
@@ -63,38 +93,13 @@ function pedirCaes(apiToken) {
                     $(".dog_list").append(card);
                 }
             });
-
-            //Botao de favoritos
-            $(".dog_list").on("click", "#favoritos", function () {
-                var card = $(this).closest(".mainCard");
-                //Primeiro vai buscar a classe que tem o id do cao e dps tira o "id-" e armazena na variavel dogId
-                var dogIdClass = card.find(".dog_name").attr("class").split(" ").filter(c => c.startsWith("id-"))[0];
-                var dogId = dogIdClass ? dogIdClass.split("-")[1] : null;
-
-                //Vai buscar a lista de caes existentes
-                var favoriteDogIds = JSON.parse(localStorage.getItem("favoriteDogIds")) || [];
-
-                if (!favoriteDogIds.includes(dogId)) {
-                    //Adiciona o cao aos favoritos
-                    favoriteDogIds.push(dogId);
-                    localStorage.setItem("favoriteDogIds", JSON.stringify(favoriteDogIds));
-
-                    $(this).removeClass("btn-success").addClass("btn-danger");
-                } else {
-                    //Remove o cao dos favoritos
-                    favoriteDogIds = favoriteDogIds.filter(id => id !== dogId);
-                    localStorage.setItem("favoriteDogIds", JSON.stringify(favoriteDogIds));
-
-                    $(this).removeClass("btn-danger").addClass("btn-success");
-                }
-            });
-
         },
         error: function (erro) {
             console.error('Erro ao pedir os caes:', erro);
         }
     });
 }
+
 
 //Pagina dos caes
 let page = 1;
@@ -112,10 +117,3 @@ carregarCaes();
 $('#carregarMais').on('click', function () {
     carregarMaisCaes();
 });
-
-//Favoritos
-
-function saveToCache(key, value) {
-    // Use appropriate caching mechanism (e.g., localStorage)
-    localStorage.setItem(key, value);
-}

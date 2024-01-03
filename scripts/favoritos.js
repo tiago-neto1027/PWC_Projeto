@@ -27,7 +27,6 @@ function pedirToken(callback) {
 // O token vem do callback na função pedirToken() e é passado aqui como parâmetro
 pedirToken(function(apiToken) {
     var favoriteDogIds = JSON.parse(localStorage.getItem("favoriteDogIds")) || [];
-    
     if(favoriteDogIds != 0){
         $.each(favoriteDogIds, function(index, dogId) {
             $.ajax({
@@ -55,6 +54,10 @@ pedirToken(function(apiToken) {
                 },
                 error: function (erro) {
                     console.error('Erro ao pedir os detalhes do cão com ID ' + dogId + ':', erro);
+                    console.log("Removemos o cao dos favoritos.");
+                    //Remove os caes dos favoritos caso o cao ja nao esteja disponivel na api
+/*                     favoriteDogIds = favoriteDogIds.filter(id => id !== dogId);
+                    localStorage.setItem("favoriteDogIds", JSON.stringify(favoriteDogIds)); */
                 }
             });
         });
