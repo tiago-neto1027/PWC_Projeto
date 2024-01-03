@@ -55,9 +55,11 @@ pedirToken(function(apiToken) {
                 error: function (erro) {
                     console.error('Erro ao pedir os detalhes do cão com ID ' + dogId + ':', erro);
                     console.log("Removemos o cao dos favoritos.");
-                    //Remove os caes dos favoritos caso o cao ja nao esteja disponivel na api
-/*                     favoriteDogIds = favoriteDogIds.filter(id => id !== dogId);
-                    localStorage.setItem("favoriteDogIds", JSON.stringify(favoriteDogIds)); */
+                    if (erro.status === 404) {
+                        console.log("Removemos o cão dos favoritos.");
+                        favoriteDogIds = favoriteDogIds.filter(id => id !== dogId);
+                        localStorage.setItem("favoriteDogIds", JSON.stringify(favoriteDogIds));
+                    }
                 }
             });
         });
