@@ -8,6 +8,9 @@
 .formSectionTitle{
     color: gray;
 }
+textarea{
+    height: 70px !important;
+}
 /*CSS Página formulário */
 /*Margens para todo o formulário*/
 .formClass{
