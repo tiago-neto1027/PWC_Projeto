@@ -1,3 +1,16 @@
+.formSection{
+    background: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.formSectionTitle{
+    color: gray;
+}
+textarea{
+    height: 70px !important;
+}
 /*CSS Página formulário */
 /*Margens para todo o formulário*/
 .formClass{
@@ -23,6 +36,7 @@
     border: solid black 1px;
     height: 35px;
     margin: 10px auto 8px auto;
+    background-color: ghostwhite;
 }
 
 /*Inputs tipo radio e checkbox*/
@@ -31,6 +45,9 @@
     width: 20px;
     height: 20px;
     margin-right: 15px;
+}
+.form-check input[type=radio]:not(:checked), .form-check input[type=checkbox]:not(:checked) {
+    background-color: ghostwhite;
 }
 .form-check, .form-subpergunta{
     max-width: 100%;
@@ -81,9 +98,9 @@ input.formpolprivacidade{
     height: 18%;
 }
 
-/*Banner lateral do formulário desaparece*/
-@media screen and (max-width: 768px){
-    .formBanner{
-        display: none;
+@media screen and (min-width: 768px){
+    .right-col{
+        border-left:1px solid darkgrey;
+        padding-left: 30px;
     }
 }
