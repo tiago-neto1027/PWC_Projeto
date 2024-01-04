@@ -1,3 +1,16 @@
+.formSection{
+    background: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.formSectionTitle{
+    color: gray;
+}
+input, textarea{
+    background: ghostwhite !important;
+}
 /*CSS Página formulário */
 /*Margens para todo o formulário*/
 .formClass{
