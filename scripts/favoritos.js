@@ -77,7 +77,7 @@ pedirToken(function(apiToken) {
 });
 
 //Botao de favoritos
-$(".dog_list").on("click", "#favoritos", function () {
+$(".dog_list").on("click", ".favoritos", function () {
     var card = $(this).closest(".mainCard");
     //Primeiro vai buscar a classe que tem o id do cao e dps tira o "id-" e armazena na variavel dogId
     var dogIdClass = card.find(".dog_name").attr("class").split(" ").filter(c => c.startsWith("id-"))[0];
