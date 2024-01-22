@@ -24,7 +24,7 @@ $(document).ready(function() {
             },
             error: function (erro) {
                 console.error('Erro ao pedir o token:', erro);
-                console.alert('Erro ao pedir o token. Tente reiniciar a página');
+                alert('Erro ao pedir o token. Tente reiniciar a página');
             }
         });
     }
