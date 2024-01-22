@@ -93,6 +93,7 @@ span{
 }
 
 /* Loading */
+/* Código retirado do site https://css-loaders.com/spinner/ número 27 no dia 22/01/2024 */
 
 .loading {
     --d:22px;

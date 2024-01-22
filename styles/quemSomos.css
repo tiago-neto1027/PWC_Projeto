@@ -4,10 +4,7 @@
 .QuemSomosCard_Container{
     display: grid;
     place-items: center;
-    margin-left:auto;
-    margin-right:auto;
     padding-block: 2.5rem;
-    
 }
 .card{
     border-color: #77C3EC;
@@ -15,7 +12,6 @@
     border-radius: 1rem;
 }
 .Card_Container{
-    margin-top: 10px;
     display:grid;
     row-gap: 1.5rem; 
 }

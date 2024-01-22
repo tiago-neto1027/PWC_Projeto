@@ -24,7 +24,6 @@
     /* Posição */
     width: 80%;
     padding: 20px;
-    margin: auto;
     min-width: 200px;
 }
 /* Botão sobre a imagem inicial (Usa a formatação do btnVoltar) */
@@ -41,9 +40,6 @@
 }
 .homeColumns h1{
     border-bottom: 2px solid white;
-}
-.homeColumns .btn-dark{
-    margin-bottom: 20px;
 }
 .coluna1{
     background: #eaeaea;
@@ -83,6 +79,5 @@
     /* Botão sobre a imagem inicial */
     .firstImageButton{
         height: 50px;
-        margin-top: 5px;
     }
 }

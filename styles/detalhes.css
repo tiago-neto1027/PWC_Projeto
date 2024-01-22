@@ -4,7 +4,6 @@
 .carousel-item img{
     height:300px;
     width: 300px;
-    margin: auto;
     border-radius: 10px;
 }
 
@@ -16,6 +15,7 @@
     font-size: 18px;
     color: rgb(82, 82, 82);
     background-color: #f8f9fa;
+    /* Foi usado o margin aqui porque era mais simples do que estar a escrever em cada um com bootstrap */
     margin: 0;
     padding-left: 10px;
     min-width: 130px;

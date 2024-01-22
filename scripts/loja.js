@@ -1,5 +1,5 @@
-/*Funcao para aumentar e diminuir o valor dentro da caixa de input */
-$(document).ready(function() {
+$(document).ready(function () {
+    /*Funcao para aumentar e diminuir o valor dentro da caixa de input */
     $(function icreadeAndDescrease() {
         $('.menos,.mais').on('click', function () {
             var $resultado = $(this).closest('div').find('.resultado'),
@@ -10,31 +10,31 @@ $(document).ready(function() {
             );
         });
     });
-/*Filtro*/
-    $(function showElementId(){
-        $('.nav'). on('click', function(event){
+    /*Filtro*/
+    $(function showElementId() {
+        $('.nav, #filtroTelemovel').on('click', function (event) {
             var elementId = (event.target.id);
             /*Mostra todos os cards quando e pressionado o filtro "todo"*/
-            if(elementId == "todos"){
+            if (elementId == "todos") {
                 $(".cardContainer").css("display", "inline-block");
             }
-            else{
+            else {
                 /*Define todos os card como display none*/
                 $(".cardContainer").css("display", "none");
                 /*Define os cards com a class = ao filtro selecionado com display inline-block*/
-                if($(".cardContainer").hasClass(elementId)){
-                    $('div .' +elementId).css("display", "inline-block");
+                if ($(".cardContainer").hasClass(elementId)) {
+                    $('div .' + elementId).css("display", "inline-block");
                 }
             }
         })
     })
 
     /*Alerta quando e pressionado o botao "comprar"*/
-    $(function alertaComprar(){
-        $('.mainBtn'). on('click', function(){
+    $(function alertaComprar() {
+        $('.mainBtn').on('click', function () {
             var val = $(this).closest(".card").find("input").val();
             var teste = $(this).closest(".card").find('h5').text();
-            alert('Comprou '+ val +'x ' + teste);
+            alert('Comprou ' + val + 'x ' + teste);
         })
     })
 });

@@ -1,12 +1,6 @@
 /*CSS para a página "Loja"*/
-/*Container principal da loja*/
-.container{
-    margin-top: 50px;
-}
-
 /*Barra de filtros*/
 .filterBar{
-    margin-top: 50px;
     width: 100%;
     padding: 0;
     font-size: 16px;
