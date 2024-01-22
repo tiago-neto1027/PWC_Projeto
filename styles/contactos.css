@@ -5,15 +5,12 @@
 }
 .mainContactos{
     box-sizing: border-box;
-    margin-bottom: 25px;
 }
 .mainContactos p{
     font-size: 12px;
 }
 @media screen and (max-width: 768px){
     .caixaContactos{
-        margin-top: 30px;
-        margin-bottom: 10px;
         border-bottom-left-radius: 40px;
         border-top-right-radius: 40px;
     }

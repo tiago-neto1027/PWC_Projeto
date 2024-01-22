@@ -24,6 +24,7 @@ $(document).ready(function() {
             },
             error: function (erro) {
                 console.error('Erro ao pedir o token:', erro);
+                console.alert('Erro ao pedir o token. Tente reiniciar a página');
             }
         });
     }
@@ -44,10 +45,13 @@ $(document).ready(function() {
                 //Descricao (Isto remove os caracteres estranhos na apresentacao da descricao)
                 //Esta escrito desta forma pois a biblioteca da he às vezes parava de funcionar
                 function decodeDescription(html) {
-                    var tempElement = document.createElement('div');
-                    tempElement.innerHTML = html;
-                    return tempElement.textContent || tempElement.innerText;
+                    var doc = new DOMParser().parseFromString(html, 'text/html');
+                    var decodedText = doc.body.textContent || "";
+                    var textarea = document.createElement('textarea');
+                    textarea.innerHTML = decodedText;
+                    return textarea.value;
                 }
+                //A descricao as vezes é encurtada, isto parece ser um problema dos dados enviados pela api e não encontrei solução
                 $(".dog_description").text(decodeDescription(dog.animal.description) || "Sem descrição");
 
                 //Tags
@@ -79,13 +83,13 @@ $(document).ready(function() {
             photos.forEach(function (photo, index) {
                 var imagemAtiva = index === 0 ? "active" : "";
                 var imagem = '<div class="carousel-item ' + imagemAtiva + '">' +
-                    '<img src="' + photo.medium + '" class="dog_image d-block" alt="dog image">' +
+                    '<img src="' + photo.medium + '" class="dog_image d-block m-auto" alt="dog image">' +
                     '</div>';
                 carouselInner.append(imagem);
             });
         } else {
             var semImagens = '<div class="carousel-item active">' +
-            '<img src="imgs/noImg.webp" class="dog_image d-block" alt="dog image">' +
+            '<img src="imgs/noImg.webp" class="dog_image d-block m-auto" alt="dog image">' +
             '</div>';
         carouselInner.append(semImagens);
         }

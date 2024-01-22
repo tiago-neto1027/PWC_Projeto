@@ -50,6 +50,7 @@ function pedirToken(callback) {
         },
         error: function (erro) {
             console.error('Erro ao pedir o token:', erro);
+            console.alert('Erro ao pedir o token. Tente reiniciar a página');
         }
     });
 }

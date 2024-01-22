@@ -50,8 +50,8 @@
     </header>
     <!-- Conteúdo da Página -->
     <!-- Barra de filtros -->
-    <div class="filterBar">
-        <ul class="nav nav-pills nav-fill">
+    <div class="filterBar mt-5">
+        <ul class="nav nav-pills nav-fill d-none d-lg-flex">
             <li class="nav-item">
                 <a class="nav-link" id="todos" href="#">Todos</a>
             </li>
@@ -71,9 +71,18 @@
                 <a class="nav-link" id="acessCasa" href="#">Acessórios para a casa</a>
             </li>
         </ul>
+        <!-- Filtro para telas menores -->
+        <select class="form-select d-lg-none text-center" id="filtroTelemovel">
+            <option value="todos" id="todos">Todos</option>
+            <option value="racoes" id="racoes">Rações</option>
+            <option value="snacks" id="snacks">Snacks</option>
+            <option value="acessPasseio" id="acessPasseio">Acessórios de passeio</option>
+            <option value="brinquedos" id="brinquedos">Brinquedos</option>
+            <option value="acessCasa" id="acessCasa">Acessórios para a casa</option>
+        </select>
     </div>
     <!-- Items na loja -->
-    <div class="container text-center overflow-hidden">
+    <div class="container text-center overflow-hidden mt-5">
         <div class="row gy-4 gx-4 justify-content-center">
             <!-- Rações -->
             <div class="col-8 col-sm-6 col-md-4 col-lg-3 cardContainer racoes">
